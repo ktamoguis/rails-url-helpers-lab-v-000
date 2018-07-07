@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
     end
 
     def set_status
-      @student.active == false ? @status = "inactive" : @status = "active"
+      #@student.active == false ? @status = "inactive" : @status = "active"
       if @student.active == false
         @status = "inactive"
         @student.active = true
